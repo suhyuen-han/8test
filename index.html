@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+html{ 
+		font-family: "Noto Sans KR", sans-serif;
+  		font-optical-sizing: auto;
+  		font-weight: 700;
+  		font-size: 17px;
+  		line-height: 1.8;
+  		word-break: keep-all;
+		}
+		body,h1,h2,h3,p,ol,ul{margin: 0; padding: 0;}
+		footer{padding: 200px}
+			header{padding: 30px; }
+			section{background:; padding: 100px 0px;}
+			h2{margin: 100px 0px 100px; font-size: 3rem; line-height: 1.2;}
+			p{margin: 60px 0px; padding-bottom: 250px; padding-top:}
+			h1{font-family: 'Playfair Display';font-weight: 600;  padding-top: 200px; padding-right: 400px; font-size: 13rem; text-shadow: 0px 0px 6px white;}
+			.left-spacing{padding-left: 700px;}
+			.right-spacing{padding-right:700px;}
+			.center-spacing{ padding-left: 100px; padding-right: 100px; text-align: center;}
+			.first{background: url(first.jpg); background-position: center ; background-attachment: ; background-size: cover;}
+			.two{background: url(two.jpg); background-attachment: f; background-size: cover; padding-right: }
+			.wrap{width: 1100px; margin: auto; position: relative;}
+			.white{color: white;}
+			.bg-white{background-color:  rgba(255, 255, 255, 0.3) }
+			img{padding-right: 10px; width:100%;}
+			.img1{padding-left: 250px; width:55%;}
+			em{font-style: normal;
+				font-weight: bold;
+				color: black;}
+			.down{padding-top: 500px; font-size: 4rem}
+			.flex{display: flex; justify-content: space-between; }
+			ul{list-style: none;}
+			ul li a{text-decoration: none;
+				display: block;
+				padding:15px 16px;
+				background-color: rgb(255, 255, 255, 0.5) ;
+				color:black;}
+				ul li a:hover{ color: #4D8BFF; transition: all 1s;}
+			.logo h1{color: black; font-size: 1rem;padding: 15px 12px; cursor: pointer;}
+			.header h1{ padding-top: 400px; padding-right: 400px; font-size: 6rem}
+			.gray{color: gray;}
+
+      		.linear-gradient{background: linear-gradient(to bottom, #ffffff 0%, #86a9f0 100%);}
+      		.linear-gradient2{background: linear-gradient(to top, #ffffff 0%, #86a9f0 100%);}
+      		.linear-gradient3{background: linear-gradient(to top, #ffffff 0%, #4D8BFF 100%);}
+      		.linear-gradient4{background: linear-gradient(to bottom, #ffffff 0%, #4D8BFF 100%);}
+      		em1{font-family: 'Playfair Display';font-weight: 700; font-size: rem;}
+      		 .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+    }
+
+    .info-box {
+      background-color: #4D8BFF;
+      color: white;
+      width: 220px;
+      padding: 24px 16px;
+      border-radius: 20px;
+      text-align: left;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .info-box h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 8px 0;
+    }
+
+    .info-box p {
+      font-size: 14px;
+      line-height: 1.4;
+      margin: 0 0 12px 0;
+    }
+
+    .icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .arrow {
+      margin-left: auto;
+      font-size: 20px;
+      align-self: flex-end;
+    }
+    p1{;padding-bottom: 10px}
+    
+    .buy-button {
+      background-color: #4D8BFF;
+      border: none;
+      border-radius: 999px;
+      padding: 10px 25px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+      cursor: pointer;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px 55px;
+      background: rgba(255, 255, 255, 0.5); /* 반투명 */
+      backdrop-filter: blur(10px);          /* 흐림 효과 */
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+.logo {
+      font-size: 24px;
+      font-weight: bold; cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    /* 아래쪽 더미 컨텐츠 (스크롤 확인용) */
+    .content {
+      margin-top: 100px;
+      padding: 60px;
+      height: 2000px;
+      background: linear-gradient(to bottom, #fff, #e2eaff);
+
+    }
+    .flex-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px; /* 글과 상자 사이 여백 */
+}
+
+.gray-box {
+  width: 400px;
+  height: 300px;
+  background-color: #d9d9d9;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+</style>
+
+</head>
+<body>
+	
+	<div class="navbar">
+    <div class="logo"><em1>XenLens™</em1></div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#function">Function</a>
+      <a href="#application">Application</a>
+      <a href="#purchase">Purchase</a>
+    </div>
+  </div>
+
+		</ul>
+	</div>
+	</nav>
+	<header class="first ">
+		<div class="wrap">
+		<h1 class="white Playfair Display">XenLens™</h1>
+		
+		
+		<h2 class="right-spacing down "><em1>XenLens™</em1></h2>
+		<p class="right-spacing ">Beyond Vision. Beyond Limits.당신의 눈을, 경계를 넘어선 감각으로 진화시키세요.<em1>XenLens</em1>는 단순한 렌즈가 아닙니다.센서 기반 초감각 기술로, 어둠을 뚫고, 열을 감지하며, 원하는 순간을    정밀하게 포착합니다.
+		</p>
+		</div>
+	
+</header>
+	<section class="two">
+		<div class="wrap">
+		<h2 class="left-spacing">세상을 더 깊이, 더 선명하게.</h2>
+		<p class="left-spacing">우리는 눈이 보지 못하는 것들을 보기 원합니다.<em1>XenLens</em1>는 시야의 한계를 뛰어넘는 차세대 스마트 콘택트 렌즈입니다.적외선과 열 감지 센서, 자동 초점 기술, AI 기반 시야 보정까지.이제 시각은 단순한 감각이 아닌, 강력한 도구가 됩니다.
+		</p>
+		</div>
+	</section>
+	<section>
+		<div class="wrap">
+		<h2 class="center-spacing" style="color: #3366CC;">주요 기능 살펴보기.</h2>
+		</div>
+	</section>
+	<section class="linear-gradient">
+		<div class="wrap flex-container">
+		<div class="wrap text-content">
+		<h2 class=" ">야간 투시 모드.</h2>
+		<p class="">어두운 환경에서도 명확한 시야를 확보하세요.<br>최첨단 적외선 센서가 빛이 없는 공간에서도 풍부한 정보를 제공합니다.
+		</p></div>
+		<div class="gray-box"></div>
+	</div>
+		<p class="center-spacing gray">렌즈에 내장된 <em>초소형 적외선 센서(IR 센서)</em> 가 어두운 환경에서도 빛을 감지하여 데이터를 생성하여<br>
+<em>증강 현실(AR) 디스플레이</em>가 눈앞에 밝은 화면을 띄워줍니다.
+
+</p>
+		<div class="wrap">
+	</section>
+	<section class="linear-gradient2">
+		
+		
+		<div class="wrap ">
+		<h2 class="left-spacing">열 감지 센서.</h2>
+		<p class="left-spacing">눈에 보이지 않는 열을 감지하여 생명체, 온도 변화, 위험 요소를 
+실시간으로 파악합니다.<br><em1>XenLens</em1>는 생명을 찾아내는 눈이 됩니다.
+
+		</p>
+
+		<p class="center-spacing gray"><em>열 감지 센서(열화상 카메라)</em> 가 물체에서 방출하는 적외선(열)을 감지합니다.
+감지된 온도를 기반으로 AI가 색상을 매핑하여 사람이 
+알아볼 수 있는 영상으로 변환하고
+생성된 영상을 렌즈 디스플레이에 투사하여 열을 감지할 수 있습니다.
+</p>
+		</div>
+		<div class="wrap flex-container">
+		<div class="wrap text-content">
+
+		<h2 class="">자동 초점 & 스마트 줌.</h2>
+		<p class="r">눈의 움직임과 연동된 정밀한 자동 초점.<br>깜빡임 한 번으로 먼 거리도 선명하게, 미세한 디테일도 놓치지 않습니다.
+
+		</p></div>
+		<div class="gray-box"></div>
+	</div>
+		<p class="center-spacing gray"><em>초소형 전자 렌즈</em>(액체 렌즈 또는 변형 가능한 광학 렌즈)가 전압을 받아 모양을 조절하여 초점을 변화합니다.<br>
+사용자의 눈 근육 움직임(홍채나 동공 크기) 또는 깜빡임을 감지하는 <em>EMG 센서</em>를 통해<br> 자동으로 확대/축소 실행하고
+AI가 사물의 거리와 크기를 분석해 최적의 초점을 제공합니다.
+</p>
+
+		</div>
+	</section>
+	<section>
+		<div class="wrap">
+		<h2 class="center-spacing"><em1>XenLens™</em1>는 당신의 미션을 완성합니다.
+			<br><br>
+		</h2>
+	
+		<div class="box-container">
+    <div class="info-box">
+      <div class="icon">🚑</div>
+      <h2>구조 현장.</h2>
+      <p1>연기, 어둠 속에서도 생존자 탐지.</p1>
+      <div class="arrow">→</div>
+    </div>
+
+    <div class="info-box">
+      <div class="icon">🥾</div>
+      <h2>야간 하이킹.</h2>
+      <p1>경로 탐색과 위험 회피.</p1>
+      <div class="arrow">→</div>
+    </div>
+
+    <div class="info-box">
+      <div class="icon">⚙️</div>
+      <h2>정밀 기술 작업.</h2>
+      <p1>산업 현장에서 눈이 직접 확대 렌즈 역할을 합니다.</p1>
+      <div class="arrow">→</div>
+     
+    </div>
+			
+	 
+</div>
+<br><br><br><br><br><br>
+
+	</section>
+	<section class="linear-gradient3">
+		<div class="wrap">
+		<h2 class="center-spacing white">당신의 시야는 당신의 능력입니다.</h2>
+		<p class="center-spacing white"><br><br><br>우리는 더 이상 눈에 보이는 것만을 믿지 않습니다.<br><em1>XenLens</em1>는 보이지 않는 세계까지 감지하고, 이해하며, 당신에게 보여줍니다.<br><br><br><br>
+
+그 어떤 상황에서도 명확한 시야.<br>당신만의 초감각.</p>
+	</div>
+</section>
+<section>
+<div class="wrap">
+		<h2 class="center-spacing">지금 확인해 보세요.</h2>
+		<img src="three.jpg">
+		<img class="img1" src="four.jpg"><br><br><br>
+		<div class="center-spacing">
+    <button class="buy-button">구입하기</button>
+    <p>₩499,000부터</p>
+  </div>
+		</div>
+		<br><br>
+</section>
+<footer class="linear-gradient4 center-spacing white">
+	<p><em1>XenLens™</em1>– The Power of Perception.<br>기술은 진화했고, 이제 감각도 함께 진화합니다.</p>
+	
+</footer>
+</body>
+</html>
